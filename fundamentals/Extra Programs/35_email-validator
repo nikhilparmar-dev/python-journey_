@@ -1,0 +1,10 @@
+email = input("Enter your email: ")
+
+if (
+    "@" in email and
+    (email.endswith(".com") or email.endswith(".in")) and
+    " " not in email
+):
+    print("Valid Email")
+else:
+    print("Invalid Email")
